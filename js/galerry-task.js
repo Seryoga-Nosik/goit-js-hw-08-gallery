@@ -61,11 +61,11 @@ function onEscClose(e) {
   }
 }
 
-function onArrowPress(event) {
-  if (event.code === 'ArrowRight') {
+function onArrowPress(e) {
+  if (e.code === 'ArrowRight') {
     onNextImgEl();
   }
-  if (event.code === 'ArrowLeft') {
+  if (e.code === 'ArrowLeft') {
     onPrevImgEl();
   }
 }
@@ -100,7 +100,7 @@ function onPrevImgEl(e) {
   }
 }
 
-function setModalImage(index) {
-  refs.lightboxImg.src = galleryItems[index].original;
-  refs.lightboxImg.alt = galleryItems[index].description;
+function setModalImage(idx) {
+  refs.lightboxImg.src = galleryItems[idx].original;
+  refs.lightboxImg.alt = galleryItems[idx].description;
 }
