@@ -77,7 +77,7 @@ let currentIndex = 0;
 function onNextImgEl(e) {
   for (let i = 0; i < images.length; i += 1) {
     if (images[i].alt === refs.lightboxImg.alt) {
-      currentIndex = i + 1;
+      currentIndex += 1;
       if (currentIndex > images.length - 1) {
         currentIndex = 0;
       }
@@ -90,7 +90,7 @@ function onNextImgEl(e) {
 function onPrevImgEl(e) {
   for (let i = 0; i < images.length; i += 1) {
     if (images[i].alt === refs.lightboxImg.alt) {
-      currentIndex = i - 1;
+      currentIndex -= 1;
       if (currentIndex < 0) {
         currentIndex = images.length - 1;
       }
