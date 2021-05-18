@@ -61,27 +61,6 @@ function onEscClose(e) {
   }
 }
 
-// let currentIndex = 1;
-
-// function onKeyPress(e) {
-//   if (e.code === 'ArrowLeft') {
-//     currentIndex -= 1;
-//   } else if (e.code === 'ArrowRight') {
-//     currentIndex += 1;
-//   }
-//   if (currentIndex > galleryItems.length) {
-//     currentIndex = 0;
-//   }
-
-//   setModalImage(currentIndex);
-// }
-
-// function setModalImage(index) {
-//   refs.lightboxImg.src = galleryItems[index].original;
-//   refs.lightboxImg.alt = galleryItems[index].description;
-// }
-// ============================================================================
-
 function onArrowPress(event) {
   if (event.code === 'ArrowRight') {
     onNextImgEl();
